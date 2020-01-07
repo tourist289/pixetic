@@ -1,0 +1,155 @@
+/*  iPad Portrait */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)
+	/**/
+
+/*  iPad Landscape */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)
+	/**/
+
+
+@media only screen and (max-width : 1024px)
+  .form__row,
+  .form label
+    max-width: 80%
+  .card
+    padding: 20px 15px
+    .form__row.df-sb,
+    .card__number
+      max-width: 100%
+      input
+        padding: 0 5px
+    //.card__date-info
+    //  label
+    //    margin-bottom: 0
+  .pay__method
+    margin-right: 25px
+
+@media only screen and (max-width : 900px)
+  .block__title
+    margin-bottom: 25px
+  .form--main
+    margin-bottom: 60px
+  .form label
+    margin-bottom: 15px
+
+  .cards__tabs
+    padding: 40px 0
+  .cards
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+
+
+  .pay__method
+    min-width: 260px
+    max-width: 360px
+    width: 100%
+    margin-bottom: 25px
+    margin-right: 0
+
+@media only screen and (max-width : 768px)
+  .pay-method .form__row
+    flex-wrap: wrap
+    flex-direction: column
+    margin-bottom: 0
+    label
+      max-width: 100%
+
+
+@media only screen and (max-width : 550px)
+
+  .pay-method .block__title
+    //max-width: 320px
+    //margin: 0 auto 25px
+    margin-bottom: 25px
+  .form--main
+    flex-direction: column
+    max-width: 360px
+    margin-bottom: 50px
+    &>.form-col-5:nth-of-type(2),
+    &>.form-col-5
+      align-items: flex-start
+  .form label,
+  .form__row
+    max-width: 100%
+
+  .pay__wrapper
+    flex-direction: column
+  .cards__tabs
+    flex-direction: row
+    padding: 20px 0
+  .cards__wrapper
+    &[data-tab='1']
+      .arrow,
+      .cards:before
+        top: 6px
+        left: 15%
+        margin-left: -15px
+        transition: left .15s
+    &[data-tab='2']
+      .arrow,
+      .cards:before
+        top: 6px
+        left: 50%
+        margin-left: -15px
+        transition: left .15s
+    &[data-tab='3']
+      .arrow,
+      .cards:before
+        top: 6px
+        left: 85%
+        margin-left: -15px
+        transition: left .15s
+
+    .arrow
+      top: 10px
+    .cards
+      margin-left: 0
+
+
+@media only screen and (max-width : 480px)
+  .form--main
+    max-width: calc(100% - 60px)
+  .form .link__wrapper .img-link
+    font-size: 13px
+    right: -70px
+  .cards__tabs
+    &>div
+      flex-direction: column
+      text-align: center
+      width: 33%
+      padding: 0 3px
+    img
+      align-self: center
+      margin-bottom: 10px
+      margin-right: 0
+      height: 25px
+      object-fit: scale-down
+
+@media only screen and (max-width : 420px)
+  .block__title
+    font-size: 24px
+  .form--main
+    max-width: 100%
+    .link__wrapper
+      margin-bottom: 25px
+      .img-link
+        right: 0
+        bottom: -25px
+
+  .cards__tabs
+    .tab__info
+      h5
+        font-size: 15px
+      p
+        font-size: 14px
+  .cards__wrapper .cards
+    padding: 20px 15px
+  .block--pay
+    .btn__wrapper
+      justify-content: center
+    .btn
+      max-width: 90%
+      min-height: 50px
+
+

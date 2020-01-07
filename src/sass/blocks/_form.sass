@@ -1,0 +1,179 @@
+.form
+    &__row,
+    label
+        display: flex
+        flex-wrap: wrap
+        margin-bottom: $mb
+        width: 100%
+        max-width: 394px
+        span
+            display: block
+            width: 100%
+            font-family: $font-roboto
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 1.1
+            color: rgba(51, 51, 51, 0.5)
+            margin-bottom: 4px
+        select,
+        input
+            display: block
+            width: 100%
+            height: 40px
+            border: 1px solid #333333
+            border-radius: 3px
+            opacity: .5
+            padding: 0 15px
+            background: #fff
+            &:focus,
+            &:hover
+                outline: none
+
+        select
+            cursor: pointer
+
+    &__row
+        display: flex
+        flex-wrap: nowrap
+        margin-bottom: 0
+
+        >*
+            display: inline-flex
+            flex-grow: 1
+            flex-wrap: wrap
+            &:first-child
+                margin-right: 10px
+
+
+    &--main
+        display: flex
+        justify-content: space-around
+        margin-bottom: 100px
+        &>.form-col-5
+            flex: 1 1 50%
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            &:nth-of-type(2)
+                align-items: flex-end
+
+
+
+    .link__wrapper
+        position: relative
+        .img-link
+            font-family: $font-roboto
+            font-weight: 500
+            font-size: 14px
+            line-height: 16px
+            color: #F57E80
+            position: absolute
+            right: -80px
+            bottom: 7px
+            width: auto
+            cursor: pointer
+
+    .form__img_wrapper
+        display: block
+        height: 0
+        opacity: 0
+        width: 100%
+        //border: 1px solid #333333
+        //border-radius: 3px
+        padding: 0
+        background: #fff
+        margin: 0
+        position: relative
+
+        &.active
+            height: 10px
+            opacity: 0.5
+            transition: all .25s
+            margin-bottom: 10px
+            .name-holder
+                display: block
+
+        input[type=file]
+            border: none
+            background: #ffffff
+            height: 0
+            opacity: 0
+        .name-holder
+            color: #333
+            font-size: 15px
+            position: absolute
+            bottom: 4px
+            display: none
+            &:before
+                content: '+'
+                font-size: 20px
+                color: #F57E80
+                position: relative
+                display: inline-block
+                left: 0
+                margin-right: 7px
+                top: 2px
+
+    .select__wrapper
+        position: relative
+        &:before
+            content: ''
+            display: block
+            width: 40px
+            height:  30px
+            position: absolute
+            right: 3px
+            bottom: 3px
+            background: #fff
+            z-index: 11
+        &:after
+            content: ''
+            display: block
+            width: 10px
+            height: 10px
+            position: absolute
+            right: 15px
+            bottom: 15px
+            transform: rotate(-135deg)
+            border: 2px solid #333
+            border-bottom: none
+            border-right: none
+            z-index: 12
+            opacity: 0.5
+
+    .email__wrapper
+        position: relative
+        &:after
+            content: ''
+            display: block
+            width: 18px
+            height: 15px
+            position: absolute
+            right: 12px
+            bottom: 12px
+            background: url(../../dist/img/icon-mail.png) no-repeat 0 0
+            background-size: contain
+            z-index: 1
+
+
+    .checkbox__wrapper
+        display: flex
+        flex-wrap: nowrap
+        justify-content: start
+        align-items: center
+        font-family: $font-roboto
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        line-height: 1
+        color: rgba(51, 51, 51, 0.5)
+        margin: 0
+        input[type=checkbox]
+            display: inline
+            margin-right: 10px
+            width: 15px
+            height: 15px
+            border-radius: 3px
+            border: 1px solid #333
+            cursor: pointer
